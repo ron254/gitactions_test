@@ -9,7 +9,9 @@ jobs:
        - name: List Files
          run: |
           pwd
-          ls
+          ls -a
+       - name: Checkout
+         uses:actions/checkout@v1.git
        - name: Simple JS Actions
          id: greet
          uses: actions/https://github.com/actions/hello-world-javascript-action@v1.git
